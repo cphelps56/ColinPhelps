@@ -9,9 +9,9 @@ namespace ColinPhelps.Controllers
     public class ResumeController : Controller
     {
         // GET: Resume
-        public ActionResult Index()
+        public ViewResult Index()
         {
-            return View();
+            return View("ResumePageContent");
         }
     }
 }

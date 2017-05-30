@@ -9,9 +9,9 @@ namespace ColinPhelps.Controllers
     public class ContactController : Controller
     {
         // GET: Contact
-        public ActionResult Index()
+        public ViewResult Index()
         {
-            return View();
+            return View("ContactPageContent");
         }
     }
 }

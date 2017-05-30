@@ -9,9 +9,9 @@ namespace ColinPhelps.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index()
+        public ViewResult Index()
         {
-            return View();
+            return View("HomePageContent");
         }
     }
 }
