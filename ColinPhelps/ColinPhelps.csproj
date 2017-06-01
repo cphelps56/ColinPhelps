@@ -172,12 +172,12 @@
     </Content>
     <Content Include="Views\Contact\ContactPageContent.cshtml" />
     <Content Include="Views\Home\HomePageContent.cshtml" />
-    <Content Include="Views\Resume\ResumePageContent.cshtml" />
     <Content Include="Views\Nav\Header.cshtml" />
     <Content Include="Views\Nav\Footer.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Nav\SocialMedia.cshtml" />
+    <Content Include="Views\Resume\resume.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
