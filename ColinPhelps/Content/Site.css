@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-image:url(http://www.mfdowntown.org/wp-content/uploads/2017/03/grey-website-background-illusionapparel2.jpg);
+    
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -18,22 +19,22 @@ textarea {
 }
 
 .sitebody{
-    border-radius:3px;
     background:#9d9d9d;
     width:100%;
     height:100%;
     opacity:.75;
-    color:black;
     margin-left:auto;
     margin-right:auto;
-    padding-right:30px;
-    padding-left:30px;
     font-family:Georgia;
     height:1000px;
+    text-align:left;
+    
 }
 
-.sitebody  p{
-    font-size: 16px;
+.sitebody-text{
+    font-size: 18px;
+    color:black;
+
 }
 
 .navbar{
@@ -64,10 +65,9 @@ textarea {
 }
 
 .navbar-custom{
-    width:90%;
-    margin:auto;
-    padding-left:30px;
-    padding-right:0;
+    margin-left:5%;
+    margin-right:5%;
+    padding-left:15px;
 }
 
 .footer-text{
@@ -76,9 +76,16 @@ textarea {
     text-align:center;
     vertical-align:central;
 }
+
 .footer-text > a:hover{
     color:#ffffff;
 }
+
+.container-custom{
+    margin-left:5%;
+    margin-right:5%;
+}
+
 
 
 
