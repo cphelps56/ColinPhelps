@@ -11,5 +11,4 @@
         }
     }
     return module;
-    // Any private functions should go below this line
 })(jQuery);
