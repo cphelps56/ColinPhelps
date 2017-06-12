@@ -16,24 +16,24 @@ namespace ColinPhelps.App_Start
                 );
 
             bundles.Add(new StyleBundle("~/bundles/bootstrap/css", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
-                .Include("~/Content/bootstrap.css")
+                .Include("~/Content/bootstrap.min.css")
                 );
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrapscripts", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
-                .Include("~/Scripts/bootstrap.js",
-                "~/Scripts/modernizr-2.6.2.js")
+                .Include("~/Scripts/bootstrap.min.js")
                 );
 
             bundles.Add(new StyleBundle("~/bundles/fontawesome", "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
-                .Include("~/bundles/fontawesome")
+                .Include("~/Content/font-awesome.min.css")
                 );
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery", "https://ajax.googleapis.com/ajax/libs/jquery/3..1/jquery.min.js")
-                .Include("~/Scripts/jquery-3.1.1.js")
+            bundles.Add(new ScriptBundle("~/bundles/jquery", "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+                .Include("~/Scripts/jquery-3.1.1.min.js")
                 );
 
             bundles.Add(new ScriptBundle("~/bundles/javascript")
-                .Include("~/Scripts/AnalyticsScripts.js")
+                .Include("~/Scripts/AnalyticsScripts.js",
+                "~/Scripts/modernizr-2.6.2.js")
                 );
 
             BundleTable.EnableOptimizations = true;
