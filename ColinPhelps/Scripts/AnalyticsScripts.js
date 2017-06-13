@@ -19,7 +19,6 @@
         resumeBtnBinding: function () {
                 $('#resumeButton').on("click", function () {
                     ga('send', 'event', 'button', 'click', 'ResumeBtn');
-                    alert("Resume button clicked");
                 });
         }
     }
