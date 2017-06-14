@@ -1,6 +1,6 @@
 ﻿@using System.Web.Optimization
 @Styles.Render("~/bundles/sitecss")
-@Scripts.Render("~/bundles/jquery")
+
 
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -17,11 +17,12 @@
             <ul class="nav navbar-nav">
                 <li><a href="@Url.Action("Index","Home")">About</a></li>
                 <li><a href="@Url.Action("Index","Contact")">Contact Me</a></li>
-                <li><a id="resumeButton" href="~/Resume/Resume.pdf" target="_blank">Resume</a></li>
+                <li><a id="resumeButton" href="~/resume.pdf" target="_blank">Resume</a></li>
             </ul>
             @Html.Action("SocialMedia","Nav")
         </div>
     </div>
 </nav>
+@Scripts.Render("~/bundles/jquery")
 
 

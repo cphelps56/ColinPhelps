@@ -13,11 +13,21 @@ namespace ColinPhelps
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Contact", "contact",
+                new { controller = "Contact", action = "Index" }
+                );
+
+            routes.MapRoute("Home", "",
+                new { controller = "Home", action = "Index" }
+                );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            
         }
     }
 }

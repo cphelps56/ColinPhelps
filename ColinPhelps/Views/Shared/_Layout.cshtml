@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Colin Phelps Personal Site</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/bundles/sitecss")
     @Styles.Render("~/bundles/bootstrap/css")
     @Styles.Render("~/bundles/fontawesome")
@@ -20,7 +20,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/javascript")
     
-    @RenderSection("scripts", required: false)
     <script>
         (function (helper) {
             $(function () {
