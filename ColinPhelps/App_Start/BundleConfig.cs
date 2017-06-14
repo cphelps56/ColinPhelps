@@ -33,7 +33,8 @@ namespace ColinPhelps.App_Start
 
             bundles.Add(new ScriptBundle("~/bundles/javascript")
                 .Include("~/Scripts/AnalyticsScripts.js",
-                "~/Scripts/modernizr-2.6.2.js")
+                "~/Scripts/modernizr-2.6.2.js",
+                "~/Scripts/navbarHelper.js")
                 );
 
             BundleTable.EnableOptimizations = true;

@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/bundles/sitecss")
     @Styles.Render("~/bundles/bootstrap/css")
     @Styles.Render("~/bundles/fontawesome")
+    @Styles.Render("~/bundles/sitecss")
 </head>
 <body>
     @Html.Action("Header", "Nav")
@@ -16,17 +16,24 @@
     </div>
     @Html.Action("Footer", "Nav")
 
-    @Scripts.Render("~/bundles/bootstrapscripts")
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrapscripts")
     @Scripts.Render("~/bundles/javascript")
     
     <script>
         (function (helper) {
             $(function () {
                 helper.analyticsSetup();
-                helper.resumeBtnBinding();
+               
             });
         })(analyticsHelper);
+
+        (function (helper) {
+            $(function () {
+                helper.resumeBtnBinding();
+
+            });
+        })(navbarHelper);
     </script>
 </body>
 </html>

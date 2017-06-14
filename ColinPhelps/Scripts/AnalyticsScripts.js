@@ -4,7 +4,7 @@
     var module = {
 
         
-         analyticsSetup: function(){
+        analyticsSetup: function () {
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                     (i[r].q = i[r].q || []).push(arguments)
@@ -14,13 +14,9 @@
 
             ga('create', 'UA-100321309-1', 'auto');
             ga('send', 'pageview');
-         },
-
-        resumeBtnBinding: function () {
-                $('#resumeButton').on("click", function () {
-                    ga('send', 'event', 'button', 'click', 'ResumeBtn');
-                });
         }
+
+        
     }
     return module;
 })(jQuery);
